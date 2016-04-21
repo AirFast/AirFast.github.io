@@ -15,6 +15,9 @@ $(function() {
 		heightDetect();
 	});
 
+	$(".sandwich, .menu_item").click(function() {
+		$(".sandwich").toggleClass("active");
+	});
 
 	//DYNAMIC SUBMENU CLASS SYMBOLS
 	$(".top_menu ul li").has( "ul" ).each(function( index ) {
@@ -45,7 +48,7 @@ $(function() {
 		}
 		$(".top_menu ul li").removeClass('openSub');
 		$(this).addClass('openSub');
-	
+		
 	});
 	
 	$("body, html").click(function(){
