@@ -17,13 +17,13 @@ $(function() {
 		}
 	});
 
-	/*function heightDetect() {
-		$("#outer-wrap").css("height", $(window).height());
+	function heightDetect() {
+		$("#video-wrap, #my-video").css("height", $(window).height());
 	};
 	heightDetect();
 	$(window).resize(function() {
 		heightDetect();
-	});*/
+	});
 
 	$(".sandwich").click(function() {
 		$(".sandwich").toggleClass("active");
