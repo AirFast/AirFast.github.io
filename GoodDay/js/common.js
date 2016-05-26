@@ -15,24 +15,7 @@ $(function() {
 		heightDetect();
 	});
 
-	$(".sandwich").click(function() {
-		$(".sandwich").toggleClass("active");
-		$('.top_menu').slideToggle(50);
-	});
-
-	$(window).resize(function() {
-		if($(window).width() > 768) {
-			$(".sandwich").removeClass("active");
-			$(".top_menu").removeAttr("style");
-		}
-	});
-
-	$(".logo, .top_menu ul li").click(function(){
-		$(".sandwich").removeClass("active");
-		$(".top_menu").removeAttr("style");
-	});
-
-	/*$(".sandwich, .menu_item").click(function() {
+	$(".sandwich, .menu_item").click(function() {
 		$(".sandwich").toggleClass("active");
 	});
 
@@ -71,7 +54,7 @@ $(function() {
 	$("body, html").click(function(){
 		$(".top_menu ul li").removeClass('active openSub');
 		$('.top_menu ul li ul').slideUp();
-	});*/
+	});
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
