@@ -17,19 +17,19 @@ $(function() {
 
 	$(".sandwich").click(function() {
 		$(".sandwich").toggleClass("active");
-		$('.top_menu').slideToggle(50);
+		$(".top_menu, .top_socnet").slideToggle(50);
 	});
 
 	$(window).resize(function() {
 		if($(window).width() > 768) {
 			$(".sandwich").removeClass("active");
-			$(".top_menu").removeAttr("style");
+			$(".top_menu, .top_socnet").removeAttr("style");
 		}
 	});
 
-	$(".logo, .top_menu ul li").click(function(){
+	$(".logo, .top_menu ul li, .top_socnet ul li").click(function(){
 		$(".sandwich").removeClass("active");
-		$(".top_menu").removeAttr("style");
+		$(".top_menu, .top_socnet").removeAttr("style");
 	});
 
 	/*$(".sandwich, .menu_item").click(function() {
