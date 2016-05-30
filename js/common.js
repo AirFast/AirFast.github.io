@@ -32,6 +32,10 @@ $(function() {
 		$(".top_menu, .top_socnet").removeAttr("style");
 	});
 
+	$(".top_menu, .top_socnet").animated("fadeInRight", "fadeOutRight");
+	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
+	$(".top_text p, .sect_head").animated("fadeInUp", "fadeOutDown");
+
 	/*$(".sandwich, .menu_item").click(function() {
 		$(".sandwich").toggleClass("active");
 	});
