@@ -46,11 +46,27 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 			ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
 				if (dir === "down") {
 					ths.removeClass(outEffect).addClass(inEffect).css("opacity", "1");
-				} else {
+				} else if (dir === "up") {
 					ths.removeClass(inEffect).addClass(outEffect).css("opacity", "1");
 				};
 			}, {
-				offset: "90%"
+				offset: "80%"
+			});
+
+		});
+	};
+
+	$.fn.animatedUp = function(inEffect, outEffect) {
+		$(this).each(function() {
+			var ths = $(this);
+			ths.css("opacity", "0").addClass("animated " + inEffect).waypoint(function(dir) {
+				if (dir === "down") {
+					ths.removeClass(inEffect).addClass(outEffect).css("opacity", "1");
+				} else if (dir === "up") {
+					ths.removeClass(outEffect).addClass(inEffect).css("opacity", "1");
+				};
+			}, {
+				offset: "-30%"
 			});
 
 		});
