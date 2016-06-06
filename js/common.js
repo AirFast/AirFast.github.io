@@ -27,16 +27,24 @@ $(function() {
 		}
 	});
 
+	$("#Container").mixItUp();
+
 	$(".logo, .top_menu ul li, .top_socnet ul li").click(function(){
 		$(".sandwich").removeClass("active");
 		$(".top_menu, .top_socnet").removeAttr("style");
 	});
 
-	$(".top_menu, .top_socnet").animatedUp("fadeInRight", "fadeOutRight");
+	//$(".top_menu, .top_socnet").animatedUp("fadeInRight", "fadeOutRight");
 	$(".btn_up").animated("fadeInRight", "fadeOutRight");
 	$(".top_text h1").animatedUp("fadeInDown", "fadeOutUp");
 	$(".top_text p").animatedUp("fadeInUp", "fadeOutDown");
 	$(".sect_head, .sect_item").animated("fadeInUp", "fadeOutDown");
+	$(".sect_menu").animated("flipInY", "flipOutY");
+
+	$(".sect_menu li").click(function() {
+		$(".sect_menu li").removeClass("active");
+		$(this).addClass("active");
+	})
 
 	/*$(".sandwich, .menu_item").click(function() {
 		$(".sandwich").toggleClass("active");
