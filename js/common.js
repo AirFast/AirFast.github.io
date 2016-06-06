@@ -27,8 +27,6 @@ $(function() {
 		}
 	});
 
-	$("#Container").mixItUp();
-
 	$(".logo, .top_menu ul li, .top_socnet ul li").click(function(){
 		$(".sandwich").removeClass("active");
 		$(".top_menu, .top_socnet").removeAttr("style");
@@ -38,8 +36,10 @@ $(function() {
 	$(".btn_up").animated("fadeInRight", "fadeOutRight");
 	$(".top_text h1").animatedUp("fadeInDown", "fadeOutUp");
 	$(".top_text p").animatedUp("fadeInUp", "fadeOutDown");
-	$(".sect_head, .sect_item").animated("fadeInUp", "fadeOutDown");
+	$(".sect_head").animated("fadeInUp", "fadeOutDown");
 	$(".sect_menu").animated("flipInY", "flipOutY");
+
+	$("#mixItUp").mixItUp();
 
 	$(".sect_menu li").click(function() {
 		$(".sect_menu li").removeClass("active");
