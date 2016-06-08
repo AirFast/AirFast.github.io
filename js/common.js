@@ -39,12 +39,34 @@ $(function() {
 	$(".sect_head").animated("fadeInUp", "fadeOutDown");
 	$(".sect_menu").animated("flipInY", "flipOutY");
 
-	$("#mixItUp").mixItUp();
+	$("#container-1").mixItUp({
+		load: {
+			filter: '.category-1'
+		},
+		layout: {
+			display: 'block'
+		},
+		selectors: {
+			filter: '.filter-1'
+		},
+	});
 
-	$(".sect_menu li").click(function() {
+	$("#container-2").mixItUp({
+		load: {
+					filter: '.category-1'
+				},
+		layout: {
+			display: 'block'
+		},
+		selectors: {
+			filter: '.filter-2'
+		},
+	});
+
+	/*$(".sect_menu li").click(function() {
 		$(".sect_menu li").removeClass("active");
 		$(this).addClass("active");
-	})
+	});*/
 
 	/*$(".sandwich, .menu_item").click(function() {
 		$(".sandwich").toggleClass("active");
