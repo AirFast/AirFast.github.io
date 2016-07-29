@@ -50,9 +50,9 @@ $(function() {
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 		loop: true,
 		margin: 30,
-		//autoplay: true,
-    //autoplayTimeout: 9000,
-    //autoplayHoverPause: true
+		autoplay: true,
+		autoplayTimeout: 9000,
+		autoplayHoverPause: true
   });
 
 	//Magnific Popup
