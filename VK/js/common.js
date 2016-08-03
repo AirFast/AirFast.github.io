@@ -20,11 +20,6 @@ $(function() {
 		$(this).addClass("active");
 	});
 
-	/*$(".blog-menu li").click(function() {
-		$(".blog-menu ul li").removeClass("active");
-		$(this).addClass("active");
-	});*/
-
 	$(".sandwich").click(function() {
 		$(".sandwich").toggleClass("active");
 		$(".menu").slideToggle(50);
@@ -50,10 +45,10 @@ $(function() {
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 		loop: true,
 		margin: 30,
-		//autoplay: true,
-    //autoplayTimeout: 9000,
-    //autoplayHoverPause: true
-  });
+		autoplay: true,
+    		autoplayTimeout: 9000,
+    		autoplayHoverPause: true
+  	});
 
 	//Magnific Popup
 	$(".popup-content").magnificPopup();
