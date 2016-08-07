@@ -20,9 +20,12 @@ $(function() {
 		$(this).addClass("active");
 	});
 
+<<<<<<< HEAD
 	//Page Scroll to id
 	$(".menu nav ul li a[href*='#']").mPageScroll2id();
 
+=======
+>>>>>>> origin/master
 	$(".sandwich").click(function() {
 		$(".sandwich").toggleClass("active");
 		$(".menu").slideToggle(50);
@@ -56,9 +59,15 @@ $(function() {
 		loop: true,
 		margin: 30,
 		autoplay: true,
+<<<<<<< HEAD
     autoplayTimeout: 9000,
     autoplayHoverPause: true
   });
+=======
+    		autoplayTimeout: 9000,
+    		autoplayHoverPause: true
+  	});
+>>>>>>> origin/master
 
 	//Magnific Popup
 	$(".popup-content").magnificPopup();
