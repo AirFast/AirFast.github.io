@@ -20,10 +20,8 @@ $(function() {
 		$(this).addClass("active");
 	});
 
-	/*$(".blog-menu li").click(function() {
-		$(".blog-menu ul li").removeClass("active");
-		$(this).addClass("active");
-	});*/
+	//Page Scroll to id
+	$(".menu nav ul li a[href*='#']").mPageScroll2id();
 
 	$(".sandwich").click(function() {
 		$(".sandwich").toggleClass("active");
@@ -42,6 +40,13 @@ $(function() {
 		}
 	});
 
+	//Btn top
+	$("body").append('<div class="top"><span>');
+	$("body").on("click", ".top", function() {
+		$("html, body").animate({scrollTop: 0}, "slow");
+	})
+
+
 	//Owl Carousel
 	$(".slider").owlCarousel({
 		items: 1,
@@ -50,9 +55,9 @@ $(function() {
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 		loop: true,
 		margin: 30,
-		//autoplay: true,
-    //autoplayTimeout: 9000,
-    //autoplayHoverPause: true
+		autoplay: true,
+    autoplayTimeout: 9000,
+    autoplayHoverPause: true
   });
 
 	//Magnific Popup
@@ -137,6 +142,15 @@ $(function() {
 			}, 1000);
 		});
 		return false;
+	});
+
+	$(window).scroll(function() {
+		if($(this).scrollTop() > $(this).height()) {
+			$(".top").addClass("active");
+		} else {
+			$(".top").removeClass("active");
+			$(".menu ul li").removeClass("active");
+		}
 	});
 
 });
