@@ -151,7 +151,7 @@ $(function() {
 			$(".descr-text, .website-description .socnet").addClass("animated fadeInLeft");
 		} else {
 			$(".top").removeClass("active");
-			$(".menu ul li").removeClass("active");
+			//$(".menu ul li").removeClass("active");
 		}
 	});
 
