@@ -5,7 +5,7 @@
 	$.fn.animated = function(inEffect) {
 		$(this).each(function() {
 			var ths = $(this);
-			ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
+			ths.css("opacity", "0").addClass("animated").waypoint(function(direction) {
 				if (dir === "down") {
 					ths.addClass(inEffect).css("opacity", "1");
 				};

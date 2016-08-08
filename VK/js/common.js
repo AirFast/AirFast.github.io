@@ -20,6 +20,7 @@ $(function() {
 		$(this).addClass("active");
 	});
 
+	
 	//Page Scroll to id
 	$(".menu nav ul li a[href*='#']").mPageScroll2id();
 
@@ -147,6 +148,7 @@ $(function() {
 	$(window).scroll(function() {
 		if($(this).scrollTop() > $(this).height()) {
 			$(".top").addClass("active");
+			$(".descr-text, .website-description .socnet").addClass("animated fadeInLeft");
 		} else {
 			$(".top").removeClass("active");
 			$(".menu ul li").removeClass("active");
