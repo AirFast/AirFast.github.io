@@ -7,13 +7,13 @@ $(function() {
 		});
 	};
 
-	function heightDetect() {
+	/*function heightDetect() {
 		$(".website-header").css("height", $(window).height());
 	};
 	heightDetect();
 	$(window).resize(function() {
 		heightDetect();
-	});
+	});*/
 
 	$(".menu li").click(function() {
 		$(".menu ul li").removeClass("active");
