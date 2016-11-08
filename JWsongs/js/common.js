@@ -48,10 +48,10 @@ $(function() {
 			}
 		}, false);
 
-		//window.addEventListener('scroll', function() {
-			//myVideo.style.top = window.pageYOffset + 50 + 'px';
+		window.addEventListener('scroll', function() {
+			myVideo.style.top = window.pageYOffset + 50 + 'px';
 			//myVideo.style.left = window.pageXOffset + 'px';
-		//}, false);
+		}, false);
 		
 	}, false); // list is clicked
 
