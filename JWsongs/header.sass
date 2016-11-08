@@ -11,7 +11,7 @@ header
 	margin: 50px 0
 	#logo
 		display: block
-		position: relative
+		position: fixed
 		width: 70px
 		height: 70px
 		background-color: $accent
@@ -59,7 +59,7 @@ section
 				width: 50px
 				height: 50px
 				font-family: "RobotoBold", sans-serif
-				//font-size: em(16px)
+				font-size: em(18px)
 				line-height: 50px
 				text-align: center
 				vertical-align: middle
@@ -81,14 +81,37 @@ section
 	background-color: rgba(0, 0, 0,.8)
 	transition: 1s ease-in-out
 	#offBtn
-		width: 20px
-		height: 20px
-		background-color: rgb(0, 0, 0)
+		position: fixed
+		width: 30px
+		height: 30px
+		top: 50px
+		right: 3%
+		background-color: rgba(#000,.2)
 		cursor: pointer
+		z-index: 1
+		&:before, &:after
+			display: block
+			content: ""
+			position: absolute
+			height: 2px
+			width: 20px
+			background-color: rgba(#fff,.5)
+			top: 13px
+			left: 4px
+			transition: .2s ease-in-out
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+		&:hover
+			&:before, &:after
+				background-color: #fff
 	#video
 		display: block
-		position: absolute
+		position: fixed
 		width: 100%
-		max-width: 90%
-		margin: 0 auto
+		max-width: 94%
+		margin: 50px 3% 0
 		background-color: rgb(0, 0, 0)
+		border-radius: 5px
+		cursor: pointer
