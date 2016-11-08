@@ -23,7 +23,16 @@ $(function() {
 			var myVideo = document.createElement('video');
 			myVideo.id = 'video';
 			myVideo.setAttribute('controls', 'controls');
+			//myVideo.setAttribute('allowfullscreen', '');
+			//myVideo.width = '500';
+			//myVideo.height = '500';
 			myOverlay.appendChild(myVideo);
+
+			// create and append source
+			var mySource = document.createElement('source');
+			mySource.src = 'musics/' + mySrc + '.mp3';
+			mySource.setAttribute('tayp', 'audio/mpeg');
+			myVideo.appendChild(mySource);
 
 			// create and append track
 			var myTrack = document.createElement('track');
@@ -34,12 +43,6 @@ $(function() {
 			myTrack.default = true;
 			myVideo.appendChild(myTrack);
 
-			// create and append source
-			var mySource = document.createElement('source');
-			mySource.src = 'musics/' + mySrc + '.mp3';
-			mySource.setAttribute('tayp', 'audio/mpeg');
-			myVideo.appendChild(mySource);
-
 		} // target is an list
 
 		myOffBtn.addEventListener('click', function() {
@@ -48,10 +51,15 @@ $(function() {
 			}
 		}, false);
 
-		window.addEventListener('scroll', function() {
-			myVideo.style.top = window.pageYOffset + 50 + 'px';
+		//window.addEventListener('scroll', function() {
+			//myVideo.style.top = window.pageYOffset + 50 + 'px';
 			//myVideo.style.left = window.pageXOffset + 'px';
-		}, false);
+		//}, false);
+
+		var elem = document.getElementById("video");
+		if (elem.requestFullscreen) {
+			elem.requestFullscreen();
+		}
 		
 	}, false); // list is clicked
 
