@@ -78,7 +78,7 @@ section
 	height: 100%
 	top: 0
 	left: 0
-	background-color: rgba(0, 0, 0,.8)
+	background-color: rgba(0, 0, 0,.95)
 	transition: 1s ease-in-out
 	#offBtn
 		position: fixed
@@ -106,6 +106,41 @@ section
 		&:hover
 			&:before, &:after
 				background-color: #fff
+	#fullscreen
+		position: fixed
+		width: 30px
+		height: 30px
+		top: 50px
+		right: 6%
+		//background-color: rgba(#fff,.2)
+		cursor: pointer
+		z-index: 1
+		&:before, &:after
+			display: block
+			content: ""
+			position: absolute
+			height: 10px
+			width: 10px
+			transition: .2s ease-in-out
+		&:before
+			border-top: 2px solid rgba(#fff,.5)
+			border-right: 2px solid rgba(#fff,.5)
+			top: 8px
+			left: 12px
+		&:after
+			border-left: 2px solid rgba(#fff,.5)
+			border-bottom: 2px solid rgba(#fff,.5)
+			top: 12px
+			left: 8px
+		&:hover
+			&:before, &:after
+				border-color: #fff
+			&:before
+				top: 5px
+				left: 15px
+			&:after
+				top: 15px
+				left: 5px
 	#video
 		display: block
 		position: fixed

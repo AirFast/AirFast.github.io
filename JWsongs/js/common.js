@@ -16,6 +16,10 @@ $(function() {
 			myOffBtn.id = 'offBtn';
 			myOverlay.appendChild(myOffBtn);
 
+			var myFullscreen = document.createElement('div');
+			myFullscreen.id = 'fullscreen';
+			myOverlay.appendChild(myFullscreen);
+
 			// getting data-src
 			var mySrc = e.target.dataset.src;
 
@@ -23,9 +27,6 @@ $(function() {
 			var myVideo = document.createElement('video');
 			myVideo.id = 'video';
 			myVideo.setAttribute('controls', 'controls');
-			//myVideo.setAttribute('allowfullscreen', '');
-			//myVideo.width = '500';
-			//myVideo.height = '500';
 			myOverlay.appendChild(myVideo);
 
 			// create and append source
@@ -51,15 +52,26 @@ $(function() {
 			}
 		}, false);
 
-		//window.addEventListener('scroll', function() {
-			//myVideo.style.top = window.pageYOffset + 50 + 'px';
-			//myVideo.style.left = window.pageXOffset + 'px';
-		//}, false);
-
-		var elem = document.getElementById("video");
-		if (elem.requestFullscreen) {
-			elem.requestFullscreen();
-		}
+		// fullscreen on/off 
+		myFullscreen.addEventListener('click', function() {
+			if (myVideo.requestFullscreen || myVideo.mozRequestFullScreen || myVideo.webkitRequestFullscreen ||	myVideo.msRequestFullscreen) {
+				if (myVideo.requestFullscreen) {
+					myVideo.requestFullscreen();
+				} else if (myVideo.webkitRequestFullscreen) {
+					myVideo.webkitRequestFullscreen();
+				} else if (myVideo.mozRequestFullScreen) {
+					myVideo.mozRequestFullScreen();
+				} else if (myVideo.msRequestFullscreen) {
+					myVideo.msRequestFullscreen();
+				}
+			} else {
+				myVideo.exitFullscreen();
+				myVideo.webkitExitFullscreen();
+				myVideo.mozCancelFullScreen();
+				myVideo.msExitFullscreen();
+			}
+		}, false);
+		
 		
 	}, false); // list is clicked
 
