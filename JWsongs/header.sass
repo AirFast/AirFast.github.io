@@ -79,7 +79,7 @@ section
 	height: 100%
 	top: 0
 	left: 0
-	background-color: rgba(0, 0, 0,.95)
+	background-color: rgba(0, 0, 0,.9)
 	transition: 1s ease-in-out
 	#offBtn
 		position: fixed
@@ -147,9 +147,22 @@ section
 		width: 100%
 		max-width: 94%
 		margin: 50px 3% 0
-		background-color: #000
+		//background-color: #000
 		border-radius: 5px
 		cursor: pointer
+		background: linear-gradient(222deg, #009977, #317a76, #91f0db)
+		background-size: 600% 600%
+		animation: Gradient 30s ease infinite
+
+		@keyframes Gradient
+			0%
+				background-position: 26% 0%
+
+			50%
+				background-position: 75% 100%
+
+			100%
+				background-position: 26% 0%
 
 ::cue
 	color: #fff
