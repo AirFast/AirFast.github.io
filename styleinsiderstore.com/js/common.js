@@ -12,4 +12,12 @@ $(function() {
     autoplayHoverPause: true
 	})
 
+	function heightDetect() {
+		$('.slide-img').css("height", $(window).width()/2);
+	};
+	heightDetect();
+	$(window).resize(function() {
+		heightDetect();
+	});
+
 });
