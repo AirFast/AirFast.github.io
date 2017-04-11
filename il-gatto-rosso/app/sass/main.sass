@@ -47,9 +47,32 @@ body
 	font-style: italic
 
 a
-	color: $accent-color
+	color: $text-color
 	outline: none!important
 	text-decoration: none!important
-	transition: .25s ease-in-out
+	transition: .2s ease-in-out
+
+.site-header
+	.header-top-line
+		.site-logo
+		.site-name
+			.h1
+				text-transform: uppercase
+				color: $accent-color
+				transition: .2s ease-in-out
+				&:hover
+					opacity: .8
+		.site-info
+	.header-menu
+		.site-menu
+			ul
+				li
+					a
+						color: $text-color
+						&:hover
+							color: $accent-color
+				li.active
+					a
+						color: $accent-color
 
 @import "media" // Всегда в конце
