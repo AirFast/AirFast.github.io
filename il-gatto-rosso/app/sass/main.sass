@@ -65,8 +65,16 @@ a
 		.site-info
 	.header-menu
 		.site-menu
+			ul, li
+				list-style-type: none
+				padding: 0
+				margin: 0
 			ul
 				li
+					display: inline-block
+					margin-right: 30px
+					&:last-child
+						margin-right: 0
 					a
 						color: $text-color
 						&:hover
