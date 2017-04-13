@@ -55,16 +55,17 @@ a
 	transition: .2s ease-in-out
 
 .site-header
+	padding-bottom: 40px
+	background-color: #fff
 	.header-top-line
 		.site-logo
 			.logo
 				display: inline-block
 				width: 150px
-				min-height: 150px
+				height: 150px
 				background-size: cover
 				background-position: 50% 50%
 				background-repeat: no-repeat
-				float: left
 		.site-name
 			.h1
 				display: block
@@ -124,5 +125,53 @@ a
 					color: $accent-color
 				.fa
 					font-size: 20px
+
+.site-slider-section
+.owl-carousel
+	.slide-bg-img
+		min-height: 500px
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat
+	.owl-nav
+		.owl-prev, .owl-next
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			.fa
+				color: rgba(#fff, .5)
+				font-size: 50px
+				transition: .2s ease-in-out
+			&:hover
+				.fa
+					color: #fff
+		.owl-prev
+			left: 50px
+		.owl-next
+			right: 50px
+	.owl-dots
+		display: inline-block
+		position: absolute
+		bottom: 30px
+		left: 50%
+		transform: translateX(-50%)
+		.owl-dot
+			display: inline-block
+			background-color: rgba(#fff, .5)
+			margin-right: 10px
+			width: 10px
+			height: 10px
+			border-radius: 100%
+			transition: .2s ease-in-out
+			&:last-child
+				margin-right: 0
+			&:hover
+				background-color: #fff
+			&.active
+				box-sizing: content-box
+				background-color: transparent
+				border: 2px solid rgba(#fff, .5)
+				transform: translateY(13%)
+
 
 @import "media" // Всегда в конце
