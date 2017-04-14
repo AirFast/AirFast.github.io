@@ -29,21 +29,29 @@
 </head>
 
 <body>
-
+	<!-- Start Site Header -->
 	<header class="site-header">
 		<div class="container">
+			<!-- Start Site Logo, Name, Info -->
 			<div class="row">
 				<div class="header-top-line">
+					<!-- Start Site Logotype -->
 					<div class="col-md-2">
 						<a href="#" class="site-logo">
 							<span class="logo" style="background-image: url('img/logo/logo.svg');"></span>
 						</a>
 					</div>
+					<!-- End Site Logotype -->
+
+					<!-- Start Site Name -->
 					<div class="col-md-7">
 						<a href="#" class="site-name">
 							<h1 class="h1">Il Gatto Rosso</h1>
 						</a>
 					</div>
+					<!-- End Site Name -->
+
+					<!-- Start Site Information -->
 					<div class="col-md-3">
 						<div class="site-info">
 							<p>пр-т Героев Сталинграда, 24,</p>
@@ -51,10 +59,15 @@
 							<p>+38 067 509 37 41</p>
 						</div>
 					</div>
+					<!-- End Site Information -->
 				</div>
 			</div>
+			<!-- End Site Logo, Name, Info -->
+
+			<!-- Start Site Navigation -->
 			<div class="row">
 				<div class="header-menu">
+					<!-- Start Site Menu -->
 					<div class="col-md-9">
 						<nav class="site-menu">
 							<ul>
@@ -68,6 +81,9 @@
 							</ul>
 						</nav>
 					</div>
+					<!-- End Site Menu -->
+
+					<!-- Start Social Networks -->
 					<div class="col-md-3">
 						<div class="site-soc-net">
 							<ul>
@@ -77,83 +93,193 @@
 							</ul>
 						</div>
 					</div>
+					<!-- End Social Networks -->
 				</div>
 			</div>
+			<!-- End Site Navigation -->
 		</div>
 	</header>
+	<!-- End Site Header -->
 
-	<section class="site-basic-slider-section">
+	<!-- Start Site Main Slider -->
+	<!-- Можна використати варіант для виводу фото статті. -->
+	<!-- Або за допомогою властивості css властивості "background-image: url('...');", або за допомогою тега <img> -->
+	<section class="site-main-slider-section">
 		<div class="owl-carousel">
-			<div class="slide-bg-img" style="background-image: url('img/slider/slide-1.jpg');">
+			<!-- Start Slid Item (through the tag <img>) -->
+			<div class="slide-wrap">
+				<img class="slide-img-responsive" src="img/main-slider/slide.jpg" alt="Семейное итальянское кафе" title="Семейное итальянское кафе">
 				<div class="flex-container">
 					<div class="flex-item">
-						<div class="slide-content">
+						<article class="slide-content">
 							<h2 class="h2">Семейное итальянское кафе</h2>
 							<p>Итальянская кухня для всех и каждого</p>
 							<a href="#" class="btn">Меню</a>
-						</div>
+						</article>
 					</div>
 				</div>
 			</div>
-			<div class="slide-bg-img" style="background-image: url('img/slider/slide-2.jpg');">
+			<!-- End Slid Item (through the tag <img>) -->
+
+			<!-- Start Slid Item (through css property "background-image") -->
+			<div class="slide-bg-img" style="background-image: url('img/main-slider/slide-1.jpg');" title="Семейное итальянское кафе">
 				<div class="flex-container">
 					<div class="flex-item">
-						<div class="slide-content">
+						<article class="slide-content">
+							<h2 class="h2">Семейное итальянское кафе</h2>
+							<p>Итальянская кухня для всех и каждого</p>
+							<a href="#" class="btn">Меню</a>
+						</article>
+					</div>
+				</div>
+			</div>
+			<!-- End Slid Item (through css property "background-image") -->
+
+			<!-- Start Slid Item (through css property "background-image") -->
+			<div class="slide-bg-img" style="background-image: url('img/main-slider/slide-2.jpg');" title="Резерв стола">
+				<div class="flex-container">
+					<div class="flex-item">
+						<article class="slide-content">
 							<h2 class="h2">Резерв стола</h2>
 							<p>Зарезервировать столик, на удобное для вас время</p>
 							<a href="#" class="btn">Резерв</a>
-						</div>
+						</article>
 					</div>
 				</div>
 			</div>
-			<div class="slide-bg-img" style="background-image: url('img/slider/slide-3.jpg');">
+			<!-- End Slid Item (through css property "background-image") -->
+
+			<!-- Start Slid Item (through css property "background-image") -->
+			<div class="slide-bg-img" style="background-image: url('img/main-slider/slide-3.jpg');" title="Вакансии">
 				<div class="flex-container">
 					<div class="flex-item">
-						<div class="slide-content">
+						<article class="slide-content">
 							<h2 class="h2">Вакансии</h2>
 							<p>Станьте частью нашей команды</p>
 							<a href="#" class="btn">Посмотреть</a>
-						</div>
+						</article>
 					</div>
 				</div>
 			</div>
+			<!-- End Slid Item (through css property "background-image") -->
 		</div>
 	</section>
+	<!-- End Site Main Slider -->
 
+	<!-- Start Site About Us Description -->
+	<!-- Можна використати варіант для виводу фото статті. -->
+	<!-- Або за допомогою властивості css властивості "background-image: url('...');", або за допомогою тега <img> -->
 	<section class="site-about-us-description">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="bg-img" style="background-image: url('img/social-networks-restaurant.jpg');"></div>
+					<!-- Можна використати варіант закоментований нижче -->
+					<!-- <div class="bg-img" style="background-image: url('img/social-networks-restaurant.jpg');" title="Ресторан итальянской кухни 'Il Gatto Rosso'"></div>-->
+					<!-- Або такий варіант -->
+					<img class="img-responsive" src="img/social-networks-restaurant.jpg" alt="Ресторан итальянской кухни 'Il Gatto Rosso'" title="Ресторан итальянской кухни 'Il Gatto Rosso'">
 				</div>
 				<div class="col-md-6">
 					<div class="flex-container">
 						<div class="flex-item">
-							<div class="description">
+							<article class="description">
 								<h2 class="h2">О ресторане</h2>
-								<p>Ресторан итальянской кухни ”Il Gatto Rosso” был открыт в июне 2016 года и расположен в начале Оболонской набережной - любимом месте отдыха жителей крупнейшего киевского жилого массива.</p>
+								<p>Ресторан итальянской кухни "Il Gatto Rosso" был открыт в июне 2016 года и расположен в начале Оболонской набережной - любимом месте отдыха жителей крупнейшего киевского жилого массива.</p>
 								<a href="#">Читать дальше ></a>
-							</div>
+							</article>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- End Site About Us Description -->
 
+	<!-- Start Site Content Slider -->
+	<!-- Можна використати варіант для виводу фото статті. -->
+	<!-- Або за допомогою властивості css властивості "background-image: url('...');", або за допомогою тега <img> -->
 	<section class="site-content-slider">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="owl-carousel">
-						<div class="slide-bg-img" style="background-image: url('img/slider/slide-1.jpg');">
-
+						<!-- Start Slid Item (through css property "background-image") -->
+						<div class="slide-bg-img" style="background-image: url('img/content-slider/slide.jpg');" title="Торты на заказ">
+							<div class="flex-container">
+								<div class="flex-item">
+									<article class="slide-content">
+										<h2 class="h2">Торты на заказ</h2>
+										<p>Наши кондитеры создали несколько сладких комбинаций, способных украсить любой праздничный стол. Вам всего лишь нужно позвонить в ресторан и ваш торт будет ждать вашего визита.</p>
+										<a href="#" class="btn">Новости</a>
+									</article>
+								</div>
+							</div>
 						</div>
+						<!-- End Slid Item (through css property "background-image") -->
+
+						<!-- Start Slid Item (through the tag <img>) -->
+						<div class="slide-wrap">
+							<img class="slide-img-responsive" src="img/content-slider/slide-1.jpg" alt="Вечера живой музыки" title="Вечера живой музыки">
+							<div class="flex-container">
+								<div class="flex-item">
+									<article class="slide-content">
+										<h2 class="h2">Вечера живой музыки</h2>
+										<p>Каждый четверг и пятницу вечер скрипки и вечер пианино.</p>
+										<a href="#" class="btn">Новости</a>
+									</article>
+								</div>
+							</div>
+						</div>
+						<!-- End Slid Item (through the tag <img>) -->
+
+						<!-- Start Slid Item (through the tag <img>) -->
+						<div class="slide-wrap">
+							<img class="slide-img-responsive" src="img/content-slider/slide-2.jpg" alt="Мероприятия" title="Мероприятия">
+							<div class="flex-container">
+								<div class="flex-item">
+									<article class="slide-content">
+										<h2 class="h2">Мероприятия</h2>
+										<p>Три небольших уютных зала способны одновременно принять до 70 человек и идеально подходят для празднования банкетов, корпоративов, дней рождений, свадеб, проведения детских мастер-классов, тематических вечеринок и других важных событий.</p>
+										<a href="#" class="btn">Новости</a>
+									</article>
+								</div>
+							</div>
+						</div>
+						<!-- End Slid Item (through the tag <img>) -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- End Site Content Slider -->
+
+	<!-- Start Site Blog Article -->
+	<!-- Можна використати варіант для виводу фото статті. -->
+	<!-- Або за допомогою властивості css властивості "background-image: url('...');", або за допомогою тега <img> -->
+	<section class="site-blog-article">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="flex-container">
+						<div class="flex-item">
+							<article class="description">
+								<span class="blog-category-name">Новости</span>
+								<h2 class="h2">Скоро Новый год!</h2>
+								<p>В третий четверг ноября, во всем винодельческом мире отмечают праздник молодого вина!</p>
+								<a href="#">Читать дальше ></a>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<!-- Можна використати варіант закоментований нижче -->
+					<!--<div class="bg-img" style="background-image: url('img/blog/wine.jpg');" title="Скоро Новый год!"></div>-->
+					<!-- Або такий варіант -->
+					<img class="img-responsive" src="img/blog/wine.jpg" alt="Скоро Новый год!" title="Скоро Новый год!">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Site About Us Description -->
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>

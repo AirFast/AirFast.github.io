@@ -55,6 +55,17 @@ a
 	&:hover
 		color: $accent-color
 
+.img-responsive
+	display: block
+	width: 100%
+	object-fit: cover
+	object-position: 50% 50%
+
+.bg-img
+	background-size: cover
+	background-position: 50% 50%
+	background-repeat: no-repeat
+
 .site-header
 	padding-bottom: 40px
 	background-color: #fff
@@ -128,6 +139,19 @@ a
 					font-size: 20px
 
 .owl-carousel
+	.slide-wrap
+		position: relative
+		.slide-img-responsive
+			height: 500px
+			display: block
+			max-width: 100%
+			object-fit: cover
+			object-position: 50% 50%
+		.flex-container
+			position: absolute
+			top: 0
+			width: 100%
+			height: 500px
 	.slide-bg-img
 		height: 500px
 		background-size: cover
@@ -179,12 +203,12 @@ a
 	.flex-item
 		margin: auto
 
-.site-basic-slider-section
+.site-main-slider-section
 	.slide-content
 		padding: 30px 40px
 		color: #fff
 		margin: 30px
-		background-color: rgba(#000, .3)
+		background-color: rgba(#000, .4)
 		border: 3px solid #fff
 		text-align: center
 		.h2
@@ -202,15 +226,13 @@ a
 				background-color: $accent-color
 
 .site-about-us-description
-	margin-top: 50px
+	margin-top: 80px
 	.flex-container
-		height: 400px
+		height: 350px
 	.bg-img
-		height: 400px
-		background-size: cover
-		background-position: 50% 50%
-		background-repeat: no-repeat
-		//box-shadow: -5px -5px 20px $text-color
+		height: 350px
+	.img-responsive
+		height: 350px
 	.description
 		.h2
 			color: $accent-color
@@ -219,6 +241,62 @@ a
 			margin-bottom: 20px
 
 .site-content-slider
-	margin-top: 50px
+	margin-top: 80px
+	.owl-carousel
+		.slide-bg-img,
+		.slide-wrap
+			position: relative
+			.flex-container
+				position: absolute
+				top: 0
+				right: 10%
+				padding: 20px 35px
+				background-color: rgba(#fff, .8)
+				width: 40%
+				height: 85%
+				.slide-content
+					text-align: center
+					.h2
+						font-style: normal
+						text-transform: uppercase
+						margin-bottom: 20px
+						&:after
+							content: ''
+							display: block
+							width: 40px
+							height: 2px
+							background-color: $text-color
+							margin: 10px auto 0
+					p
+						margin-bottom: 30px
+					.btn
+						text-transform: uppercase
+						border: 1px solid $text-color
+						padding: 8px 35px
+						&:hover
+							background-color: $text-color
+							color: #fff
+
+.site-blog-article
+	margin-top: 80px
+	.flex-container
+		height: 350px
+	.bg-img
+		height: 350px
+	.img-responsive
+		height: 350px
+	.description
+		.blog-category-name
+			font-size: 14px
+			text-transform: uppercase
+			margin-left: 5px
+			font-weight: 900
+		.h2
+			color: $accent-color
+			margin-bottom: 30px
+		p
+			margin-bottom: 20px
+
+
 
 @import "media" // Всегда в конце
