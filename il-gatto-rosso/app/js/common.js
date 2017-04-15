@@ -1,4 +1,13 @@
 $(function() {
+    // Preloader
+    $('body').ready(function () {
+        setTimeout(function () {
+            var preloader = $('#site-preloaser');
+            if (!preloader.hasClass('done')) {
+                preloader.addClass('done');
+            }
+        }, 1000);
+    });
 
 	// Slider Owl Carousel
     $(".owl-carousel").owlCarousel({
