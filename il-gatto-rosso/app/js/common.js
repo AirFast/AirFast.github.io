@@ -1,6 +1,6 @@
 $(function() {
     // Preloader
-    $('img').ready(function () {
+    $(window).on('load', function () {
         setTimeout(function () {
             var preloader = $('#site-preloaser');
             if (!preloader.hasClass('done')) {
