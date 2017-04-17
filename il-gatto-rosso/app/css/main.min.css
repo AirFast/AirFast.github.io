@@ -3443,6 +3443,8 @@ a {
   transition: .2s ease-in-out; }
   a:hover {
     color: #F26805; }
+  a:visited {
+    color: #605E5E; }
 
 .img-responsive {
   display: block;
