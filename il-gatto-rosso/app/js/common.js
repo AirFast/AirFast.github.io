@@ -9,6 +9,24 @@ $(function() {
         }, 1000);
     });
 
+    // Sandwich
+    $(".sandwich").click(function() {
+        $(".sandwich").toggleClass("active");
+        $(".header-menu").slideToggle(50);
+    });
+
+    $(".site-menu li").click(function(){
+        $(".sandwich").removeClass("active");
+        $(".header-menu").removeAttr("style");
+    });
+
+    $(window).resize(function() {
+        if($(window).width() > 768) {
+            $(".sandwich").removeClass("active");
+            $(".header-menu").removeAttr("style");
+        }
+    });
+
 	// Slider Owl Carousel
     $(".owl-carousel").owlCarousel({
         items: 1,

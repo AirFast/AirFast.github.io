@@ -108,6 +108,52 @@ a
 	background-repeat: no-repeat
 	background-size: cover
 
+.sandwich
+	width: $w
+	height: $w
+	cursor: pointer
+	.sw-topper
+		position: relative
+		width: $w
+		height: $h
+		background-color: $accent-color
+		border: none
+		border-radius: 4px 4px 4px 4px
+		transition: transform 0.5s, top 0.2s
+	.sw-bottom
+		position: relative
+		width: $w
+		height: $h
+		top: $h * 5
+		background: $accent-color
+		border: none
+		border-radius: 4px 4px 4px 4px
+		transition: transform 0.5s, top 0.2s
+		transition-delay: 0.2s, 0s
+	.sw-footer
+		position: relative
+		width: $w
+		height: $h
+		top: $h * 10
+		background: $accent-color
+		border: none
+		border-radius: 4px 4px 4px 4px
+		transition: all 0.5s
+		transition-delay: 0.1s
+.sandwich.active
+	.sw-topper
+		width: $w
+		top: 6px
+		transform: rotate(135deg)
+	.sw-bottom
+		width: $w
+		top: 5px
+		transform: rotate(-135deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(360deg)
+
 .site-header
 	padding-bottom: 40px
 	background-color: #fff
