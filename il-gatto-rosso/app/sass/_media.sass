@@ -38,9 +38,9 @@
       .site-logo
         display: block
         text-align: center
-        .logo
       .site-name
         .h1
+          margin-top: 25px
           margin-left: 30px
           text-align: center
           font-size: 25px
@@ -61,6 +61,25 @@
     .sandwich
       margin: 0 auto
 
+  .owl-carousel
+    .slide-wrap
+      .slide-img-responsive
+        height: 400px
+      .flex-container
+        height: 400px
+    .slide-bg-img
+      height: 400px
+    .owl-nav
+      .owl-prev, .owl-next
+        display: none
+
+  .site-main-slider-section
+    .slide-content
+      width: 440px
+      .h2
+        font-size: 20px
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
   .site-header
@@ -72,6 +91,25 @@
       li
         display: block
         margin: 10px 0
+  .site-main-slider-section
+    .flex-container
+      .flex-item
+        width: 100%
+        .slide-content
+          width: 100%
+          margin: 0
+          padding: 20px 15px 30px
+          .h2
+            font-size: 20px
+            margin-bottom: 15px
+
+  .site-about-us-section
+    .flex-container
+      height: 250px
+    .bg-img
+      height: 250px
+    .img-responsive
+      height: 250px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
