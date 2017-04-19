@@ -48,6 +48,14 @@
           width: 70%
           height: 85%
 
+  .site-blog-article-section
+    .flex-container
+      height: 300px
+    .bg-img
+      height: 300px
+    .img-responsive
+      height: 300px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
   .site-header
@@ -116,17 +124,25 @@
             .h2
               font-size: 20px
 
+  .site-blog-article-section
+    .flex-container
+      display: block
+      height: auto
+      .description
+        margin-top: 50px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
   .site-header
     .header-top-line
       .site-name
         display: none
-  .site-soc-net
-    ul
-      li
-        display: block
-        margin: 10px 0
+    .site-soc-net
+      ul
+        li
+          display: block
+          margin: 10px 0
+
   .site-main-slider-section
     .flex-container
       .flex-item
@@ -159,6 +175,12 @@
               margin-bottom: 50px
             p
               display: none
+
+  .site-blog-article-section
+    .bg-img
+      height: 250px
+    .img-responsive
+      height: 250px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
