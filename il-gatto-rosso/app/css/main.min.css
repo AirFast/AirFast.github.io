@@ -3455,6 +3455,7 @@ a {
 .img-responsive {
   display: block;
   width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: 50% 50%; }
 
@@ -3771,8 +3772,6 @@ a {
     height: 350px; }
   .site-about-us-section .bg-img {
     height: 350px; }
-  .site-about-us-section .img-responsive {
-    height: 350px; }
   .site-about-us-section .description .h2 {
     color: #F26805;
     margin-bottom: 30px; }
@@ -3832,8 +3831,6 @@ a {
     height: 350px; }
   .site-blog-article-section .bg-img {
     height: 350px; }
-  .site-blog-article-section .img-responsive {
-    height: 350px; }
   .site-blog-article-section .description .blog-category-name {
     font-size: 11px;
     font-weight: 800;
@@ -3876,6 +3873,33 @@ a {
 /** End Parallax Section Styles */
 /** END HOME PAGE **/
 /** START ABOUT RESTAURANT PAGE **/
+/** Start About Restaurant Section */
+.site-about-restaurant-section {
+  margin-top: 80px; }
+  .site-about-restaurant-section .article-about-restaurant .article-content .part {
+    margin-bottom: 40px;
+    display: inline-block; }
+    .site-about-restaurant-section .article-about-restaurant .article-content .part:last-child {
+      margin: 0; }
+    .site-about-restaurant-section .article-about-restaurant .article-content .part .article-header .h2 {
+      color: #F26805;
+      margin-bottom: 30px; }
+    .site-about-restaurant-section .article-about-restaurant .article-content .part .content p {
+      margin-bottom: 20px; }
+      .site-about-restaurant-section .article-about-restaurant .article-content .part .content p:last-child {
+        margin: 0; }
+    .site-about-restaurant-section .article-about-restaurant .article-content .part .bg-img {
+      height: 550px; }
+
+/** End About Restaurant Section */
+/** Start Customer Feedback Section */
+.site-customer-feedback-section {
+  margin-top: 80px; }
+  .site-customer-feedback-section .customer-feedback-header .h2 {
+    color: #F26805;
+    margin-bottom: 30px; }
+
+/** End Customer Feedback Section */
 /** END ABOUT RESTAURANT PAGE **/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -3884,6 +3908,7 @@ a {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  /** START HOME PAGE **/
   .site-header .header-top-line .site-logo .logo {
     width: 100px;
     height: 100px; }
@@ -3904,8 +3929,6 @@ a {
     height: 300px; }
   .site-about-us-section .bg-img {
     height: 300px; }
-  .site-about-us-section .img-responsive {
-    height: 300px; }
   .site-content-slider-section .owl-carousel .slide-bg-img .flex-container,
   .site-content-slider-section .owl-carousel .slide-wrap .flex-container {
     left: 15%;
@@ -3915,13 +3938,15 @@ a {
     height: 300px; }
   .site-blog-article-section .bg-img {
     height: 300px; }
-  .site-blog-article-section .img-responsive {
-    height: 300px; }
   .site-footer .subscribe-news .submit {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  /** END HOME PAGE **/
+  /** START ABOUT RESTAURANT PAGE **/
+  /** END ABOUT RESTAURANT PAGE **/ }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+  /** START HOME PAGE **/
   .site-header {
     padding: 0; }
     .site-header .header-top-line .site-logo {
@@ -3980,10 +4005,20 @@ a {
     .site-blog-article-section .flex-container .description {
       margin-top: 50px; }
   .site-footer .copyright {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  /** END HOME PAGE **/
+  /** START ABOUT RESTAURANT PAGE **/
+  .site-about-restaurant-section .article-about-restaurant .article-content .img-responsive {
+    width: 70%;
+    margin: 0 auto 50px; }
+  .site-about-restaurant-section .article-about-restaurant .article-content .bg-img {
+    width: 70%;
+    margin: 0 auto 50px; }
+  /** END ABOUT RESTAURANT PAGE **/ }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  /** START HOME PAGE **/
   .site-header .header-top-line .site-name {
     display: none; }
   .site-header .site-soc-net ul li {
@@ -4000,8 +4035,6 @@ a {
         margin-bottom: 15px; }
   .site-about-us-section .bg-img {
     height: 250px; }
-  .site-about-us-section .img-responsive {
-    height: 250px; }
   .site-content-slider-section .owl-carousel .slide-bg-img .flex-container,
   .site-content-slider-section .owl-carousel .slide-wrap .flex-container {
     top: 20%;
@@ -4016,8 +4049,6 @@ a {
       display: none; }
   .site-blog-article-section .bg-img {
     height: 250px; }
-  .site-blog-article-section .img-responsive {
-    height: 250px; }
   .parallax {
     height: 350px; }
   .site-parallax-section .flex-container {
@@ -4027,7 +4058,14 @@ a {
       .site-parallax-section .flex-container .description .h2 {
         font-size: 20px; }
       .site-parallax-section .flex-container .description .btn {
-        padding: 8px 30px; } }
+        padding: 8px 30px; }
+  /** END HOME PAGE **/
+  /** START ABOUT RESTAURANT PAGE **/
+  .site-about-restaurant-section .article-about-restaurant .article-content .img-responsive {
+    width: 100%; }
+  .site-about-restaurant-section .article-about-restaurant .article-content .bg-img {
+    width: 100%; }
+  /** END ABOUT RESTAURANT PAGE **/ }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

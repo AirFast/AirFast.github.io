@@ -96,6 +96,7 @@ a
 .img-responsive
 	display: block
 	width: 100%
+	height: auto
 	object-fit: cover
 	object-position: 50% 50%
 /* Background photos
@@ -374,7 +375,7 @@ a
 	.bg-img
 		height: 350px
 	.img-responsive
-		height: 350px
+		//height: 350px
 	.description
 		.h2
 			color: $accent-color
@@ -430,7 +431,7 @@ a
 	.bg-img
 		height: 350px
 	.img-responsive
-		height: 350px
+		//height: 350px
 	.description
 		.blog-category-name
 			font-size: 11px
@@ -473,6 +474,38 @@ a
 /** END HOME PAGE **/
 
 /** START ABOUT RESTAURANT PAGE **/
+/** Start About Restaurant Section
+.site-about-restaurant-section
+	margin-top: 80px
+	.article-about-restaurant
+		.article-content
+			.part
+				margin-bottom: 40px
+				display: inline-block
+				&:last-child
+					margin: 0
+				.article-header
+					.h2
+						color: $accent-color
+						margin-bottom: 30px
+				.content
+					p
+						margin-bottom: 20px
+						&:last-child
+							margin: 0
+				.img-responsive
+					//height: 550px
+				.bg-img
+					height: 550px
+/** End About Restaurant Section
 
+/** Start Customer Feedback Section
+.site-customer-feedback-section
+	margin-top: 80px
+	.customer-feedback-header
+		.h2
+			color: $accent-color
+			margin-bottom: 30px
+/** End Customer Feedback Section
 /** END ABOUT RESTAURANT PAGE **/
 @import "media" // Всегда в конце
