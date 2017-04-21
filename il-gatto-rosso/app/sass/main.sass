@@ -503,11 +503,49 @@ a
 .site-customer-feedback-section
 	margin-top: 80px
 	.customer-feedback-header
+		text-align: center
 		.h2
 			color: $accent-color
-			margin-bottom: 30px
+			margin-bottom: 40px
 	.customer-feedback
-
+		.customer-img
+			text-align: center
+			.img-responsive,
+			.bg-img
+				display: inline-block
+				width: 100px
+				border-radius: 50%
+				border: 3px solid rgba($accent-color, .7)
+			.bg-img
+				height: 100px
+			.customer
+				&:hover
+					color: $accent-color
+				.h3
+					font-style: normal
+					margin: 25px 0 15px
+		.customer-content
+			text-align: left
+			p
+				margin-bottom: 15px
+				font-size: 15px
+				&:before,
+				&:after
+					font-family: FontAwesome
+					font-size: 13px
+					line-height: 15px
+					color: rgba($accent-color, .7)
+				&:first-child
+					&:before
+						content: '\f10d'
+						vertical-align: top
+						padding-right: 7px
+				&:last-child
+					margin-bottom: 0
+					&:after
+						content: '\f10e'
+						vertical-align: bottom
+						padding-left: 7px
 /** End Customer Feedback Section
 /** END ABOUT RESTAURANT PAGE **/
 @import "media" // Всегда в конце

@@ -3895,9 +3895,47 @@ a {
 /** Start Customer Feedback Section */
 .site-customer-feedback-section {
   margin-top: 80px; }
-  .site-customer-feedback-section .customer-feedback-header .h2 {
-    color: #F26805;
-    margin-bottom: 30px; }
+  .site-customer-feedback-section .customer-feedback-header {
+    text-align: center; }
+    .site-customer-feedback-section .customer-feedback-header .h2 {
+      color: #F26805;
+      margin-bottom: 40px; }
+  .site-customer-feedback-section .customer-feedback .customer-img {
+    text-align: center; }
+    .site-customer-feedback-section .customer-feedback .customer-img .img-responsive,
+    .site-customer-feedback-section .customer-feedback .customer-img .bg-img {
+      display: inline-block;
+      width: 100px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      border: 3px solid rgba(242, 104, 5, 0.7); }
+    .site-customer-feedback-section .customer-feedback .customer-img .bg-img {
+      height: 100px; }
+    .site-customer-feedback-section .customer-feedback .customer-img .customer:hover {
+      color: #F26805; }
+    .site-customer-feedback-section .customer-feedback .customer-img .customer .h3 {
+      font-style: normal;
+      margin: 25px 0 15px; }
+  .site-customer-feedback-section .customer-feedback .customer-content {
+    text-align: left; }
+    .site-customer-feedback-section .customer-feedback .customer-content p {
+      margin-bottom: 15px;
+      font-size: 15px; }
+      .site-customer-feedback-section .customer-feedback .customer-content p:before, .site-customer-feedback-section .customer-feedback .customer-content p:after {
+        font-family: FontAwesome;
+        font-size: 13px;
+        line-height: 15px;
+        color: rgba(242, 104, 5, 0.7); }
+      .site-customer-feedback-section .customer-feedback .customer-content p:first-child:before {
+        content: '\f10d';
+        vertical-align: top;
+        padding-right: 7px; }
+      .site-customer-feedback-section .customer-feedback .customer-content p:last-child {
+        margin-bottom: 0; }
+        .site-customer-feedback-section .customer-feedback .customer-content p:last-child:after {
+          content: '\f10e';
+          vertical-align: bottom;
+          padding-left: 7px; }
 
 /** End Customer Feedback Section */
 /** END ABOUT RESTAURANT PAGE **/
