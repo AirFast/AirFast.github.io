@@ -3980,6 +3980,10 @@ a {
     margin-top: 15px; }
   /** END HOME PAGE **/
   /** START ABOUT RESTAURANT PAGE **/
+  .site-customer-feedback-section .customer-feedback .col-md-4 .customer-content {
+    margin-bottom: 50px; }
+  .site-customer-feedback-section .customer-feedback .col-md-4:last-child .customer-content {
+    margin: 0; }
   /** END ABOUT RESTAURANT PAGE **/ }
 
 /* Small Devices, Tablets */
