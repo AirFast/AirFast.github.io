@@ -3964,7 +3964,8 @@ a {
     .site-blog-news-section .blog-news-content .blog-news-article .article-content p {
       margin: 15px 0; }
   .site-blog-news-section .blog-news-sidebar {
-    margin-top: 120px; }
+    margin-top: 120px;
+    /** End Blog News Sidebar */ }
     .site-blog-news-section .blog-news-sidebar .category,
     .site-blog-news-section .blog-news-sidebar .posts,
     .site-blog-news-section .blog-news-sidebar .tags {
@@ -4007,6 +4008,10 @@ a {
         .site-blog-news-section .blog-news-sidebar .posts a:hover,
         .site-blog-news-section .blog-news-sidebar .tags a:hover {
           color: #F26805; }
+        .site-blog-news-section .blog-news-sidebar .category a:visited,
+        .site-blog-news-section .blog-news-sidebar .posts a:visited,
+        .site-blog-news-section .blog-news-sidebar .tags a:visited {
+          color: #F26805; }
     .site-blog-news-section .blog-news-sidebar .category li {
       text-transform: uppercase;
       font-size: 15px; }
@@ -4020,9 +4025,15 @@ a {
       display: inline;
       margin-right: 7px; }
 
-/** End Blog News Sidebar */
 /** End Blog News Section */
 /** END BLOG NEWS PAGE **/
+/** START ARTIClE PAGE **/
+/** Start Blog News Post Section */
+.site-blog-news-section.post {
+  margin: 0; }
+
+/** End Blog News Post Section */
+/** END ARTIClE PAGE **/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
