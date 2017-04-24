@@ -4034,6 +4034,50 @@ a {
 
 /** End Blog News Post Section */
 /** END ARTIClE PAGE **/
+/** START RESTAURANT MENU PAGE **/
+/** Start Restaurant Menu Section */
+.site-restaurant-menu-section {
+  margin-top: 80px; }
+  .site-restaurant-menu-section .restaurant-menu-header {
+    text-align: center; }
+    .site-restaurant-menu-section .restaurant-menu-header .h2 {
+      text-transform: uppercase;
+      font-style: normal;
+      margin-bottom: 30px; }
+    .site-restaurant-menu-section .restaurant-menu-header p {
+      font-style: italic; }
+  .site-restaurant-menu-section .restaurant-menu-items-header {
+    margin: 60px 0;
+    text-align: center; }
+    .site-restaurant-menu-section .restaurant-menu-items-header .h3 {
+      text-transform: uppercase;
+      font-style: normal;
+      color: #F26805;
+      margin-bottom: 20px; }
+  .site-restaurant-menu-section .food-item {
+    margin-bottom: 60px;
+    text-align: center;
+    height: 100%; }
+    .site-restaurant-menu-section .food-item .bg-img,
+    .site-restaurant-menu-section .food-item .img-responsive {
+      width: 280px;
+      height: 280px;
+      margin: 0 auto; }
+    .site-restaurant-menu-section .food-item .food-name {
+      margin: 30px 0 10px; }
+      .site-restaurant-menu-section .food-item .food-name:after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: #605E5E;
+        margin: 10px auto; }
+      .site-restaurant-menu-section .food-item .food-name .h4 {
+        text-transform: uppercase;
+        font-style: normal; }
+
+/** End Restaurant Menu Section */
+/** END RESTAURANT MENU PAGE **/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
