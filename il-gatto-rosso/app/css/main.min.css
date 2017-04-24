@@ -3831,26 +3831,29 @@ a {
     height: 350px; }
   .site-blog-article-section .bg-img {
     height: 350px; }
-  .site-blog-article-section .description .blog-category-name {
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    background-color: rgba(96, 94, 94, 0.7);
-    color: #fff;
-    padding: 4px 10px;
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
-    text-transform: uppercase; }
   .site-blog-article-section .description .h2 {
     color: #F26805;
     margin: 15px 0 30px; }
   .site-blog-article-section .description p {
     margin-bottom: 20px; }
 
+.blog-category-name {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background-color: rgba(96, 94, 94, 0.7);
+  color: #fff;
+  padding: 4px 10px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  text-transform: uppercase; }
+
 /** End Blog Article Styles */
 /** Start Parallax Section Styles */
 .site-parallax-section {
   margin-top: 80px; }
+  .site-parallax-section.reset-margin {
+    margin: 0; }
   .site-parallax-section .flex-container {
     height: 500px; }
     .site-parallax-section .flex-container .description {
@@ -3939,6 +3942,87 @@ a {
 
 /** End Customer Feedback Section */
 /** END ABOUT RESTAURANT PAGE **/
+/** START BLOG NEWS PAGE **/
+/** Start Blog News Section */
+.site-blog-news-section {
+  margin-top: 80px;
+  /** Start Blog News Content */
+  /** End Blog News Content */
+  /** Start Blog News Sidebar */ }
+  .site-blog-news-section .blog-news-content .blog-news-article {
+    margin-bottom: 80px; }
+    .site-blog-news-section .blog-news-content .blog-news-article a:visited {
+      color: #F26805; }
+    .site-blog-news-section .blog-news-content .blog-news-article .article-header {
+      margin-bottom: 20px; }
+      .site-blog-news-section .blog-news-content .blog-news-article .article-header .h2 {
+        margin: 15px 0 0px; }
+      .site-blog-news-section .blog-news-content .blog-news-article .article-header .article-date {
+        font-size: 13px; }
+    .site-blog-news-section .blog-news-content .blog-news-article .article-content .bg-img {
+      height: 350px; }
+    .site-blog-news-section .blog-news-content .blog-news-article .article-content p {
+      margin: 15px 0; }
+  .site-blog-news-section .blog-news-sidebar {
+    margin-top: 120px; }
+    .site-blog-news-section .blog-news-sidebar .category,
+    .site-blog-news-section .blog-news-sidebar .posts,
+    .site-blog-news-section .blog-news-sidebar .tags {
+      margin-bottom: 60px; }
+      .site-blog-news-section .blog-news-sidebar .category:last-child,
+      .site-blog-news-section .blog-news-sidebar .posts:last-child,
+      .site-blog-news-section .blog-news-sidebar .tags:last-child {
+        margin: 0; }
+      .site-blog-news-section .blog-news-sidebar .category nav,
+      .site-blog-news-section .blog-news-sidebar .posts nav,
+      .site-blog-news-section .blog-news-sidebar .tags nav {
+        margin-top: 20px; }
+      .site-blog-news-section .blog-news-sidebar .category ul, .site-blog-news-section .blog-news-sidebar .category li,
+      .site-blog-news-section .blog-news-sidebar .posts ul,
+      .site-blog-news-section .blog-news-sidebar .posts li,
+      .site-blog-news-section .blog-news-sidebar .tags ul,
+      .site-blog-news-section .blog-news-sidebar .tags li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none; }
+      .site-blog-news-section .blog-news-sidebar .category span,
+      .site-blog-news-section .blog-news-sidebar .posts span,
+      .site-blog-news-section .blog-news-sidebar .tags span {
+        font-size: 18px; }
+        .site-blog-news-section .blog-news-sidebar .category span:after,
+        .site-blog-news-section .blog-news-sidebar .posts span:after,
+        .site-blog-news-section .blog-news-sidebar .tags span:after {
+          content: '';
+          display: block;
+          margin-top: 5px;
+          height: 1px;
+          width: 30px;
+          background-color: #605E5E; }
+      .site-blog-news-section .blog-news-sidebar .category a,
+      .site-blog-news-section .blog-news-sidebar .posts a,
+      .site-blog-news-section .blog-news-sidebar .tags a {
+        -webkit-transition: .2s ease-in-out;
+        transition: .2s ease-in-out; }
+        .site-blog-news-section .blog-news-sidebar .category a:hover,
+        .site-blog-news-section .blog-news-sidebar .posts a:hover,
+        .site-blog-news-section .blog-news-sidebar .tags a:hover {
+          color: #F26805; }
+    .site-blog-news-section .blog-news-sidebar .category li {
+      text-transform: uppercase;
+      font-size: 15px; }
+    .site-blog-news-section .blog-news-sidebar .posts li {
+      font-size: 12px;
+      margin-bottom: 5px; }
+      .site-blog-news-section .blog-news-sidebar .posts li .article-date {
+        display: block; }
+    .site-blog-news-section .blog-news-sidebar .tags li {
+      font-size: 12px;
+      display: inline;
+      margin-right: 7px; }
+
+/** End Blog News Sidebar */
+/** End Blog News Section */
+/** END BLOG NEWS PAGE **/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -4056,7 +4140,15 @@ a {
   .site-about-restaurant-section .article-about-restaurant .article-content .bg-img {
     width: 70%;
     margin: 0 auto 50px; }
-  /** END ABOUT RESTAURANT PAGE **/ }
+  /** END ABOUT RESTAURANT PAGE **/
+  /** START BLOG NEWS PAGE **/
+  .site-blog-news-section .blog-news-sidebar {
+    margin: 0 0 80px; }
+    .site-blog-news-section .blog-news-sidebar .category,
+    .site-blog-news-section .blog-news-sidebar .posts,
+    .site-blog-news-section .blog-news-sidebar .tags {
+      margin-bottom: 40px; }
+  /** END BLOG NEWS PAGE **/ }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
