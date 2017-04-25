@@ -4144,9 +4144,9 @@ a {
     .site-contacts-section .contacts-block .contacts-form .submit:hover {
       background-color: #F26805; }
   .site-contacts-section .map-block {
-    margin-bottom: 40px; }
+    margin-top: 80px; }
     .site-contacts-section .map-block #map {
-      height: 400px; }
+      height: 600px; }
 
 #bodyContent {
   margin-bottom: 30px; }
