@@ -706,6 +706,11 @@ a
 				transition: .2s ease-in-out
 				&::placeholder
 					color: rgba($text-color, .6)
+			.name,
+			.email,
+			.subject,
+			.message
+				border: 1px solid rgba($text-color, .3)
 			.message
 				resize: none
 			.submit
@@ -719,9 +724,9 @@ a
 				&:hover
 					background-color: $accent-color
 	.map-block
-		//margin-top: 80px
+		margin-bottom: 40px
 		#map
-			height: 500px
+			height: 400px
 #bodyContent
 	margin-bottom: 30px
 	.img-responsive
