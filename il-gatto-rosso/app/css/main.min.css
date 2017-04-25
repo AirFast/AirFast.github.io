@@ -4138,6 +4138,8 @@ a {
     transition: .2s ease-in-out; }
     .site-contacts-section .contacts-block .contacts-form .submit:hover {
       background-color: #F26805; }
+  .site-contacts-section .map-block #map {
+    height: 500px; }
 
 /** End Contacts Section */
 /** END CONTACTS PAGE **/
