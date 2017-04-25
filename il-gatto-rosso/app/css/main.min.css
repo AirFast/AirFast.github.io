@@ -4282,8 +4282,14 @@ a {
     .site-blog-news-section .blog-news-sidebar .posts,
     .site-blog-news-section .blog-news-sidebar .tags {
       margin-bottom: 40px; }
-  /** END BLOG NEWS PAGE **/ }
+  /** END BLOG NEWS PAGE **/
+  /** START CONTACTS PAGE **/
+  .site-contacts-section .map-block {
+    margin-top: 60px; }
+    .site-contacts-section .map-block #map {
+      height: 500px; } }
 
+/** END CONTACTS PAGE **/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   /** START HOME PAGE **/
@@ -4333,7 +4339,13 @@ a {
     width: 100%; }
   .site-about-restaurant-section .article-about-restaurant .article-content .bg-img {
     width: 100%; }
-  /** END ABOUT RESTAURANT PAGE **/ }
+  /** END ABOUT RESTAURANT PAGE **/
+  /** START CONTACTS PAGE **/
+  .site-contacts-section .map-block {
+    margin-top: 40px; }
+    .site-contacts-section .map-block #map {
+      height: 400px; }
+  /** END CONTACTS PAGE **/ }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
