@@ -3964,8 +3964,7 @@ a {
     .site-blog-news-section .blog-news-content .blog-news-article .article-content p {
       margin: 15px 0; }
   .site-blog-news-section .blog-news-sidebar {
-    margin-top: 120px;
-    /** End Blog News Sidebar */ }
+    margin-top: 120px; }
     .site-blog-news-section .blog-news-sidebar .category,
     .site-blog-news-section .blog-news-sidebar .posts,
     .site-blog-news-section .blog-news-sidebar .tags {
@@ -4025,6 +4024,7 @@ a {
       display: inline;
       margin-right: 7px; }
 
+/** End Blog News Sidebar */
 /** End Blog News Section */
 /** END BLOG NEWS PAGE **/
 /** START ARTIClE PAGE **/
@@ -4078,6 +4078,69 @@ a {
 
 /** End Restaurant Menu Section */
 /** END RESTAURANT MENU PAGE **/
+/** START CONTACTS PAGE **/
+/** Start Contacts Section */
+.site-contacts-section {
+  margin: 80px 0; }
+  .site-contacts-section .contacts-block .contacts-info {
+    margin-bottom: 60px; }
+    .site-contacts-section .contacts-block .contacts-info .h2 {
+      color: #F26805;
+      margin-bottom: 30px; }
+    .site-contacts-section .contacts-block .contacts-info .address,
+    .site-contacts-section .contacts-block .contacts-info .work-time {
+      margin-bottom: 20px; }
+  .site-contacts-section .contacts-block .contacts-form p,
+  .site-contacts-section .contacts-block .contacts-form .name,
+  .site-contacts-section .contacts-block .contacts-form .email,
+  .site-contacts-section .contacts-block .contacts-form .subject,
+  .site-contacts-section .contacts-block .contacts-form .message {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 7px 15px;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
+    .site-contacts-section .contacts-block .contacts-form p::-webkit-input-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .name::-webkit-input-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .email::-webkit-input-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .subject::-webkit-input-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .message::-webkit-input-placeholder {
+      color: rgba(96, 94, 94, 0.6); }
+    .site-contacts-section .contacts-block .contacts-form p::-moz-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .name::-moz-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .email::-moz-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .subject::-moz-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .message::-moz-placeholder {
+      color: rgba(96, 94, 94, 0.6); }
+    .site-contacts-section .contacts-block .contacts-form p:-ms-input-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .name:-ms-input-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .email:-ms-input-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .subject:-ms-input-placeholder,
+    .site-contacts-section .contacts-block .contacts-form .message:-ms-input-placeholder {
+      color: rgba(96, 94, 94, 0.6); }
+    .site-contacts-section .contacts-block .contacts-form p::placeholder,
+    .site-contacts-section .contacts-block .contacts-form .name::placeholder,
+    .site-contacts-section .contacts-block .contacts-form .email::placeholder,
+    .site-contacts-section .contacts-block .contacts-form .subject::placeholder,
+    .site-contacts-section .contacts-block .contacts-form .message::placeholder {
+      color: rgba(96, 94, 94, 0.6); }
+  .site-contacts-section .contacts-block .contacts-form .message {
+    resize: none; }
+  .site-contacts-section .contacts-block .contacts-form .submit {
+    font-size: 14px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    background-color: #605E5E;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
+    .site-contacts-section .contacts-block .contacts-form .submit:hover {
+      background-color: #F26805; }
+
+/** End Contacts Section */
+/** END CONTACTS PAGE **/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

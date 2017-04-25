@@ -619,8 +619,8 @@ a
 				font-size: 12px
 				display: inline
 				margin-right: 7px
-		/** End Blog News Sidebar
-/** End Blog News Section
+/** End Blog News Sidebar
+	/** End Blog News Section
 /** END BLOG NEWS PAGE **/
 
 /** START ARTIClE PAGE **/
@@ -678,4 +678,47 @@ a
 			p
 /** End Restaurant Menu Section
 /** END RESTAURANT MENU PAGE **/
+
+/** START CONTACTS PAGE **/
+/** Start Contacts Section
+.site-contacts-section
+	margin: 80px 0
+	.contacts-block
+		.contacts-info
+			margin-bottom: 60px
+			.h2
+				color: $accent-color
+				margin-bottom: 30px
+			.address,
+			.work-time
+				margin-bottom: 20px
+			.phone
+		.contacts-form
+			p,
+			.name,
+			.email,
+			.subject,
+			.message
+				width: 100%
+				margin-bottom: 20px
+				font-size: 14px
+				padding: 7px 15px
+				transition: .2s ease-in-out
+				&::placeholder
+					color: rgba($text-color, .6)
+			.message
+				resize: none
+			.submit
+				font-size: 14px
+				padding: 7px 15px
+				text-transform: uppercase
+				border: none
+				color: #fff
+				background-color: $text-color
+				transition: .2s ease-in-out
+				&:hover
+					background-color: $accent-color
+	.map-block
+/** End Contacts Section
+/** END CONTACTS PAGE **/
 @import "media" // Всегда в конце
