@@ -1,12 +1,7 @@
 $(function() {
     // Preloader
     $(window).on('load', function () {
-        setTimeout(function () {
-            var preloader = $('#site-preloaser');
-            if (!preloader.hasClass('done')) {
-                preloader.addClass('done');
-            }
-        }, 1000);
+        $('#site-preloader').delay(1000).fadeOut('slow');
     });
 
     // Sandwich
