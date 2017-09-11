@@ -63,14 +63,14 @@ body {
     font-weight: bold;
 }
 
-.app-section .lang-menu ul,
-.app-section .lang-menu ul li {
+.app-section ul,
+.app-section ul li {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.app-section .lang-menu ul {
+.app-section ul {
     display: block;
     width: 980px;
     margin: 0 auto;
