@@ -1,4 +1,7 @@
 body {
+    margin: 0;
+    padding: 0;
+
     font-size: 16px;
     min-width: 320px;
     position: relative;
@@ -9,13 +12,90 @@ body {
     color: #605e5e;
 }
 
-.app-header, .app-section, .app-footer {
-    position: relative;
-}
-
 .bg-img {
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat
 }
+
+.btn {
+    color: #efc53f;
+    border: 2px solid #efc53f;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .2s all ease-in-out;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.active {
+    color: #fff;
+    background: #efc53f;
+}
+
+.app-header, .app-section, .app-footer {
+    position: relative;
+}
+
+.app-header {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.app-header .logo-wrap,
+.app-header .btn-wrap {
+    margin: auto;
+    text-align: center;
+    width: 49%;
+}
+
+.app-section .welcome p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.app-section .lang-menu ul,
+.app-section .lang-menu ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-section .lang-menu ul {
+    display: block;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.app-section .lang-menu ul li {
+    text-align: center;
+    margin: 75px 0;
+}
+
+.app-section .lang-menu ul li:first-child {
+    margin-top: 0;
+}
+
+.app-section .lang-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.app-section .lang-menu .btn-lang-wrap {
+    margin-top: 100px;
+}
+
+.app-section .lang-menu .btn-lang-wrap .btn {
+    width: 210px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* main color #efc53f */
