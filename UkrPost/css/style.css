@@ -1,10 +1,4 @@
 /* Загальні стилі */
-/*html, body {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: relative;*/
-/*}*/
-
 body {
     margin: 0;
     padding: 0;
@@ -129,6 +123,20 @@ body {
     margin: 0 auto;
 }
 
+/* Стилі для основної секції (друк чеку) */
+.app-section .icon {
+    margin-top: 100px;
+}
+
+.app-section .icon p {
+    text-align: center;
+}
+
+.app-section .icon .fa {
+    font-size: 150px;
+}
+
+
 /* Стилі для футера */
 .app-footer {
     margin: 100px 0 20px;
@@ -159,7 +167,7 @@ body {
     width: 100%;
     margin: auto;
     background: #fff;
-    /*border: 5px solid #efc53f;*/
+    border: 5px solid #efc53f;
     padding: 50px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -182,7 +190,7 @@ body {
     position: absolute;
     width: 150px;
     height: 150px;
-    border: 5px solid transparent;
+    border: 3px solid transparent;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border-top-color: #efc53f;
