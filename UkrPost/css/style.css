@@ -59,11 +59,36 @@ body {
     width: 49%;
 }
 
-/* Стилі для основної секції (мови) */
+.app-header .logo-wrap {
+    width: 34%;
+}
+
+.app-header .btn-wrap {
+    width: 63%;
+}
+
+.app-header .lang-menu {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.app-header .lang-menu .btn-lang-wrap {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-header .lang-menu .btn-lang-wrap li {
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+/* Стилі для основної секції */
 .app-section .notice p {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    margin: 8px 0;
 }
 
 .app-section .lang-menu .btn-lang-wrap {
@@ -81,26 +106,6 @@ body {
     display: block;
     max-width: 980px;
     width: 100%;
-    margin: 0 auto;
-}
-
-.app-section .lang-menu ul li {
-    text-align: center;
-    margin: 50px 0;
-}
-
-.app-section .lang-menu ul li:first-child {
-    margin-top: 0;
-}
-
-.app-section .lang-menu ul li:last-child {
-    margin-bottom: 0;
-}
-
-.app-section .lang-menu .btn-lang-wrap .btn {
-    max-width: 210px;
-    width: 100%;
-    display: block;
     margin: 0 auto;
 }
 
