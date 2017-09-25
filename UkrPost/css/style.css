@@ -12,6 +12,11 @@ body {
     color: #605e5e;
 }
 
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
 .bg-img {
     background-image: url('../img/upost-bg.png');
     background-size: contain;
@@ -30,6 +35,7 @@ body {
     text-align: center;
     text-decoration: none;
     box-sizing: border-box;
+    cursor: pointer;
     transition: .2s all ease-in-out;
 }
 
@@ -139,6 +145,80 @@ body {
 
 .app-section .icon .fa {
     font-size: 150px;
+}
+
+/* Стилі для основної секції (логін) */
+.app-section .login-form {
+    display: block;
+    max-width: 980px;
+    width: 100%;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.app-section .login-form form .login-wrap,
+.app-section .login-form form .password-wrap {
+    margin-bottom: 50px;
+}
+
+.app-section .login-form form .login-wrap .field-login,
+.app-section .login-form form .password-wrap .field-password {
+    max-width: 320px;
+    width: 100%;
+    display: inline-block;
+    padding: 17px 25px 16px;
+    border: 2px solid #efc53f;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #efc53f;
+    transition: all .2s ease-in-out;
+}
+
+.app-section .login-form form .btn-submit {
+    background: transparent;
+}
+
+.app-section .login-form form .btn-submit:hover,
+.app-section .login-form form .btn-submit:focus {
+    background: #efc53f;
+}
+
+.app-section .login-form form .login-wrap .field-login::placeholder,
+.app-section .login-form form .password-wrap .field-password::placeholder {
+    color: #d9d5cd;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.app-section .login-form form .login-wrap .field-login.empty,
+.app-section .login-form form .password-wrap .field-password.empty {
+    border: 2px solid #d9d5cd;
+    color: #605e5e;
+}
+
+.app-section .login-form form .login-wrap .field-login:focus,
+.app-section .login-form form .password-wrap .field-password:focus {
+    border: 2px solid #efc53f;
+    color: #efc53f;
+}
+
+.app-section .login-form form .login-wrap .field-login:focus::placeholder,
+.app-section .login-form form .password-wrap .field-password:focus::placeholder {
+    color: transparent;
+}
+
+.app-section .login-form .forgot-password {
+    margin-top: 30px;
+}
+
+.app-section .login-form .forgot-password a {
+    color: #605e5e;
+    transition: all .2s ease-in-out;
+}
+
+.app-section .login-form .forgot-password a:hover {
+    color: #efc53f;
 }
 
 

@@ -10,4 +10,12 @@ $(function () {
         $('#pop-up-timer').addClass('hidden');
     })
 
+    $('input[value=""]').addClass('empty');
+    $('input').keyup(function(){
+        if( $(this).val() == ""){
+            $(this).addClass("empty");
+        }else{
+            $(this).removeClass("empty");
+        }
+    });
 });
