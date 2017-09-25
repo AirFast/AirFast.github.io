@@ -221,6 +221,27 @@ body {
     color: #efc53f;
 }
 
+/* Стилі для основної секції (список черги) */
+.app-section .list-queue-wrap {
+    margin-top: 100px;
+}
+
+.app-section .list-queue-wrap ul li {
+    width: 49%;
+    text-align: center;
+    margin: 0 auto 50px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.app-section .list-queue-wrap ul li div {
+    display: inline-block;
+}
+
+.app-section .list-queue-wrap ul li .time,
+.app-section .list-queue-wrap ul li .status {
+    margin-left: 30px;
+}
 
 /* Стилі для футера */
 .app-footer {
