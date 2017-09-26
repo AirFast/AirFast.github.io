@@ -286,6 +286,7 @@ body {
 }
 
 .app-section .list-queue-wrap ul li .operator,
+.app-section .list-queue-wrap ul li .window,
 .app-section .list-queue-wrap ul li .time,
 .app-section .list-queue-wrap ul li .status {
     margin-left: 30px;
