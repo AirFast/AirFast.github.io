@@ -268,8 +268,9 @@ body {
 }
 
 /* Стилі для основної секції (список черги) */
-.app-section .list-queue-wrap {
-    margin-top: 100px;
+.app-section .list-queue-wrap,
+.app-section .list-queue-items {
+    margin-top: 50px;
 }
 
 .app-section .list-queue-wrap ul li {
@@ -287,6 +288,19 @@ body {
 .app-section .list-queue-wrap ul li .time,
 .app-section .list-queue-wrap ul li .status {
     margin-left: 30px;
+}
+
+.app-section .list-queue-wrap .button {
+    text-align: center;
+}
+
+.app-section .list-queue-wrap .button .btn {
+    background: transparent;
+}
+
+.app-section .list-queue-wrap .button .btn:hover,
+.app-section .list-queue-wrap .button .btn:focus {
+    background: #efc53f;
 }
 
 /* Стилі для футера */
