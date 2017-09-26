@@ -10,8 +10,8 @@ $(function () {
         $('#pop-up-timer').addClass('hidden');
     })
 
-    $('input[value=""]').addClass('empty');
-    $('input').keyup(function(){
+    $('input[value=""], textarea[value=""]').addClass('empty');
+    $('input, textarea').keyup(function(){
         if( $(this).val() == ""){
             $(this).addClass("empty");
         }else{

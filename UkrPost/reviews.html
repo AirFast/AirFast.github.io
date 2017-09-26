@@ -48,17 +48,22 @@
 
     <div class="reviews-form">
         <form action="" method="post">
-            <div class="login-wrap">
-                <input class="field-login" type="text" name="login" placeholder="Логін" value="">
+            <div class="fields-wrap">
+                <input class="field number" type="text" name="number" placeholder="Номер" value="">
+                <input class="field code" type="text" name="code" placeholder="Код" value="">
             </div>
-            <div class="password-wrap">
-                <input class="field-password" type="password" name="password" placeholder="Пароль" value="">
+            <div class="fields-wrap">
+                <input class="field phone" type="text" pattern="[0-9]{12}" name="phone" placeholder="Телефон" value="">
+                <input class="field email" type="email" name="email" placeholder="Email" value="">
             </div>
-            <input class="btn btn-submit" type="submit" value="Увійти">
+            <div class="field-wrap">
+                <input class="field name" type="text" name="name" placeholder="ПІБ" value="">
+            </div>
+            <div class="field-wrap">
+                <textarea class="field-text" name="text" placeholder="Напишіть свій відгук" value=""></textarea>
+            </div>
+            <input class="btn btn-submit" type="submit" value="Надіслати">
         </form>
-        <div class="forgot-password">
-            <a href="#">Забули пароль?</a>
-        </div>
     </div>
 
 </section>
