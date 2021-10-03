@@ -1,6 +1,6 @@
 {
-    "name": "managing-packages-with-npm",
-    "author": "andrew",
+	"name": "fcc-learn-npm-package-json",
+	"author": "Andrew Petryk",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
