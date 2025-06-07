@@ -1,0 +1,1 @@
+import{j as e}from"./index-DlDaAO35.js";import{S as t}from"./Section-Dvk5_IRj.js";const r=()=>e.jsx(t,{children:e.jsx("h1",{className:"text-4xl font-medium",children:"Home Page"})});export{r as default};
