@@ -1,0 +1,28 @@
+{
+  "home": "Home",
+  "create": "Create territory",
+  "langs": {
+    "en": "English",
+    "uk": "Ukrainian"
+  },
+  "floor": "Floor",
+  "apartment_building": "Apartment Building",
+  "private_houses": "Private Houses",
+  "default": "Unspecified",
+  "number": "Total number: {{n}}",
+  "not_visited": "Not visited: {{n}}",
+  "visited": "Visited: {{n}}",
+  "delete_territory_confirm": "Are you sure you want to remove the territory?",
+  "notes": "Notes",
+  "save": "Save",
+  "cancel": "Cancel",
+  "loading": "Loading...",
+  "deletingTerritory": "Deleting territory...",
+  "loadingTerritories": "Loading territories...",
+  "territoryName": "Territory name",
+  "numberOfFloors": "Number of floors",
+  "numberPerFloor": "Number of apartments per floor",
+  "countingFromApartment": "Counting from apartment",
+  "numberOfHouses": "Number of houses",
+  "countingFromHouse": "Counting from house"
+}

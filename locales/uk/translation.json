@@ -1,0 +1,28 @@
+{
+  "home": "Головна",
+  "create": "Створити територію",
+  "langs": {
+    "en": "Англійська",
+    "uk": "Українська"
+  },
+  "floor": "Поверх",
+  "apartment_building": "Багатоквартирний будинок",
+  "private_houses": "Приватні будинки",
+  "default": "Невизачено",
+  "number": "Загальна кількість: {{n}}",
+  "not_visited": "Не відвідані: {{n}}",
+  "visited": "Відвідані: {{n}}",
+  "delete_territory_confirm": "Ти справді хочеш видалити територію?",
+  "notes": "Нотатки",
+  "save": "Зберегти",
+  "cancel": "Скасувати",
+  "loading": "Завантаження...",
+  "deletingTerritory": "Видалення території...",
+  "loadingTerritories": "Завантаження територій...",
+  "territoryName": "Назва території",
+  "numberOfFloors": "Кількість поверхів",
+  "numberPerFloor": "Кількість квартир на поверх",
+  "countingFromApartment": "Відлік з квартири",
+  "numberOfHouses": "Кількість будинків",
+  "countingFromHouse": "Відлік з будинку"
+}
